@@ -202,6 +202,25 @@ if confirm-overwrite $config/btop
     ln -s (realpath btop) $config/btop
 end
 
+# Kitty
+if confirm-overwrite $config/kitty
+    log 'Installing kitty config...'
+    ln -s (realpath kitty) $config/kitty
+end
+
+# NeoVim
+if confirm-overwrite $config/nvim
+    log 'Installing neovim config...'
+    ln -s (realpath nvim) $config/nvim
+end
+
+# Caelestia
+if confirm-overwrite $config/caelestia
+    log 'Installing caelestia config...'
+    ln -s (realpath caelestia) $config/caelestia
+end
+
+
 # Install spicetify
 if set -q _flag_spotify
     log 'Installing spotify (spicetify)...'
