@@ -1,1 +1,11 @@
-return { 'tpope/vim-surround' }
+return {
+  "kylechui/nvim-surround",
+  event = "VeryLazy",
+  config = function()
+    require("nvim-surround").setup({
+      keymaps = {
+        visual = "<C-s>",
+      }
+    })
+  end
+}
