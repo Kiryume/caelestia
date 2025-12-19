@@ -8,7 +8,7 @@ return {
     'mason-org/mason-lspconfig.nvim',
     'WhoIsSethDaniel/mason-tool-installer.nvim',
 
-    { 'j-hui/fidget.nvim',    opts = {} },
+    { 'j-hui/fidget.nvim', opts = {} },
 
     'saghen/blink.cmp',
   },
@@ -129,6 +129,11 @@ return {
       'stylua',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
+    vim.lsp.config('racket_langserver', {
+      capabilities = capabilities,
+      filetypes = { 'rkt', 'racket' },
+    })
+    vim.lsp.enable('racket_langserver', true)
 
     require('mason-lspconfig').setup {
       ensure_installed = {},

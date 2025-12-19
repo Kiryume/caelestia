@@ -1,6 +1,8 @@
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
+-- no racket maps
+vim.g.no_racket_maps = 1
 
 -- Set highlight on search
 vim.o.hlsearch = false
