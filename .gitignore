@@ -9,5 +9,5 @@
 /fish/fish_variables
 
 .SRCINFO
-/tmux/plugins
-/nvim/lazy-lock.json
+nvim/lazy-lock.json
+tmux/plugins
