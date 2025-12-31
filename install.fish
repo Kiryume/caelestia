@@ -228,6 +228,12 @@ if confirm-overwrite $config/tmux
     git clone https://github.com/tmux-plugins/tpm $config/tmux/plugins/tpm
 end
 
+# profile.d
+if confirm-overwrite /etc/profile.d/global_envvars.sh
+    log 'Installing /etc/profile.d/global_envvars.sh...'
+    sudo ln -s (realpath global_envvars.sh) /etc/profile.d/global_envvars.sh
+end
+
 
 # Install spicetify
 if set -q _flag_spotify
