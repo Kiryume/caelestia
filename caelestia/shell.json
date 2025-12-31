@@ -1,5 +1,23 @@
 {
     "services": {
         "smartScheme": false
+    },
+    "general": {
+        "idle": {
+            "timeouts": [
+                {
+                    "timeout": 6000,
+                    "idleAction": "lock"
+                },
+                {
+                    "timeout": 7000,
+                    "idleAction": "dpms off",
+                    "returnAction": "dpms on"
+                },
+                {
+                    "timeout": 9000,
+                    "idleAction": ["systemctl", "suspend-then-hibernate"]
+                }]
+        }
     }
 }
