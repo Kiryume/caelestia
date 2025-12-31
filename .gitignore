@@ -10,3 +10,4 @@
 
 .SRCINFO
 nvim/lazy-lock.json
+tmux/plugins

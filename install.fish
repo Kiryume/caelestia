@@ -220,6 +220,14 @@ if confirm-overwrite $config/caelestia
     ln -s (realpath caelestia) $config/caelestia
 end
 
+# TMUX
+if confirm-overwrite $config/tmux
+    log 'Installing tmux config...'
+    ln -s (realpath tmux) $config/tmux
+    mkdir $config/tmux/plugins
+    git clone https://github.com/tmux-plugins/tpm $config/tmux/plugins/tpm
+end
+
 
 # Install spicetify
 if set -q _flag_spotify
