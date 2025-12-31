@@ -11,5 +11,5 @@
 /fish/conf.d/
 
 .SRCINFO
-/tmux/plugins
-/nvim/lazy-lock.json
+nvim/lazy-lock.json
+tmux/plugins
