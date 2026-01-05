@@ -10,9 +10,11 @@ return {
 
     { 'j-hui/fidget.nvim', opts = {} },
 
+    'folke/neoconf.nvim',
     'saghen/blink.cmp',
   },
   config = function()
+    require('neoconf').setup()
     vim.api.nvim_create_autocmd('LspAttach', {
       group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
       callback = function(event)
