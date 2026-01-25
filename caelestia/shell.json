@@ -502,9 +502,9 @@
     }
   },
   "services": {
-    "weatherLocation": "",
-    "useFahrenheit": true,
-    "useTwelveHourClock": true,
+    "weatherLocation": "Aarhus",
+    "useFahrenheit": false,
+    "useTwelveHourClock": false,
     "gpuType": "",
     "visualiserBars": 45,
     "audioIncrement": 0.1,
