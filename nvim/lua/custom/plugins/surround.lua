@@ -3,9 +3,9 @@ return {
   event = "VeryLazy",
   config = function()
     require("nvim-surround").setup({
-      keymaps = {
-        visual = "<C-s>",
-      }
+      -- keymaps = {
+      --   visual = "<C-s>",
+      -- }
     })
   end
 }
