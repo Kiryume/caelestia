@@ -21,7 +21,7 @@ return {
     local scheme = nil
 
     local f = io.open(scheme_path, "r")
-    if f then
+    if f and false then
       local content = f:read("*a") -- read entire file
       f:close()
       local ok, decoded = pcall(vim.json.decode, content)
@@ -37,9 +37,9 @@ return {
     scheme = scheme or require('catppuccin.palettes').get_palette('frappe')
     require('catppuccin').setup({
       flavour = 'frappe',
-      color_overrides = {
-        all = scheme
-      }
+      -- color_overrides = {
+      --   all = scheme
+      -- }
     })
     vim.cmd.colorscheme 'catppuccin'
   end,
