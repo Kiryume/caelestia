@@ -11,12 +11,6 @@ return {
         jump = true,
       },
       on_attach = on_attach,
-      languages = { -- Language specific default compiler/flags
-        c = {
-          compiler = 'rv64-cclang',
-          compiler_flags = '-Oz',
-        },
-      },
     }
   end,
 }
