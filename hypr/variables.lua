@@ -70,10 +70,10 @@ return {
     -- All the following binds can be either an array of binds to bind multiple keys, or a single string.
 
     -- Workspaces
-    kbMoveWinToWsSpecial       = { "SUPER + ALT + S", "CTRL + SUPER + SHIFT + Up" },
-    kbMoveWinFromWsSpecial     = "CTRL + SUPER + SHIFT + Down",
-    kbMoveWinToWsNext          = { "SUPER + ALT + mouse_down", "SUPER + ALT + Page_Down", "CTRL + SUPER + SHIFT + Right" },
-    kbMoveWinToWsPrev          = { "SUPER + ALT + mouse_up", "SUPER + ALT + Page_Up", "CTRL + SUPER + SHIFT + Left" },
+    kbMoveWinToWsSpecial       = { "SUPER + ALT + S", "CTRL + SUPER + SHIFT + K" },
+    kbMoveWinFromWsSpecial     = "CTRL + SUPER + SHIFT + J",
+    kbMoveWinToWsNext          = { "SUPER + ALT + mouse_down", "SUPER + ALT + Page_Down", "CTRL + SUPER + SHIFT + Right", "SUPER + SHIFT + O" },
+    kbMoveWinToWsPrev          = { "SUPER + ALT + mouse_up", "SUPER + ALT + Page_Up", "CTRL + SUPER + SHIFT + Left", "SUPER + SHIFT + I" },
     kbNextWs                   = { "SUPER + mouse_down", "SUPER + O", "SUPER + Page_Down" },
     kbPrevWs                   = { "SUPER + mouse_up", "SUPER + I", "SUPER + Page_Up" },
     kbNextWsGroup              = "CTRL + SUPER + mouse_down",
