@@ -7,7 +7,7 @@ if status is-interactive
     # command -v zoxide &> /dev/null && zoxide init fish --cmd cd | source
 
     # Better ls
-    command -v eza &> /dev/null && alias ls='eza --icons --group-directories-first -1'
+    # command -v eza &> /dev/null && alias ls='eza --icons --group-directories-first -1'
 
     # Abbrs
     # abbr gd 'git diff'
