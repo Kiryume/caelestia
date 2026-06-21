@@ -120,9 +120,10 @@ create_bind("SUPER + L", hl.dsp.focus({ direction = "right" }))
 create_bind("SUPER + K", hl.dsp.focus({ direction = "up" }))
 create_bind("SUPER + J", hl.dsp.focus({ direction = "down" }))
 create_bind(vars.kbSwapWithMaster, hl.dsp.layout("swapwithmaster"))
-for _, dir in ipairs({ "left", "right", "up", "down" }) do
-    create_bind("SUPER + SHIFT + " .. dir, hl.dsp.window.move({ direction = dir }))
-end
+create_bind("SUPER + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
+create_bind("SUPER + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
+create_bind("SUPER + SHIFT + K", hl.dsp.window.move({ direction = "up" }))
+create_bind("SUPER + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 
 create_bind(vars.kbWindowDecreaseWidth, fn.resize_active_window(-10, 0), repeating)
 create_bind(vars.kbWindowIncreaseWidth, fn.resize_active_window(10, 0), repeating)
