@@ -25,11 +25,14 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.global("caelestia:brightnessDown"), { lo
 hl.bind("CTRL + SUPER + Space", hl.dsp.global("caelestia:mediaToggle"), { locked = true })
 hl.bind("XF86AudioPlay", hl.dsp.global("caelestia:mediaToggle"), { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.global("caelestia:mediaToggle"), { locked = true })
+hl.bind("SUPER + semicolon", hl.dsp.global("caelestia:mediaToggle"), { locked = true })
 hl.bind("CTRL + SUPER + Equal", hl.dsp.global("caelestia:mediaNext"), { locked = true })
 hl.bind("XF86AudioNext", hl.dsp.global("caelestia:mediaNext"), { locked = true })
 hl.bind("CTRL + SUPER + Minus", hl.dsp.global("caelestia:mediaPrev"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.global("caelestia:mediaPrev"), { locked = true })
 hl.bind("XF86AudioStop", hl.dsp.global("caelestia:mediaStop"), { locked = true })
+hl.bind("SUPER + bracketleft", hl.dsp.global("caelestia:mediaNext"), { locked = true })
+hl.bind("SUPER + bracketright", hl.dsp.global("caelestia:mediaPrev"), { locked = true })
 
 -- Kill/restart
 hl.bind("CTRL + SUPER + SHIFT + R", hl.dsp.exec_cmd("qs -c caelestia kill"), { release = true })
@@ -82,10 +85,11 @@ hl.bind(vars.kbUngroup, hl.dsp.window.move({ out_of_group = true }))
 hl.bind("SUPER + SHIFT + Comma", hl.dsp.group.lock_active())
 
 -- Window actions
-hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }))
-hl.bind("SUPER + right", hl.dsp.focus({ direction = "right" }))
-hl.bind("SUPER + up", hl.dsp.focus({ direction = "up" }))
-hl.bind("SUPER + down", hl.dsp.focus({ direction = "down" }))
+hl.bind("SUPER + H", hl.dsp.focus({ direction = "left" }))
+hl.bind("SUPER + L", hl.dsp.focus({ direction = "right" }))
+hl.bind("SUPER + K", hl.dsp.focus({ direction = "up" }))
+hl.bind("SUPER + J", hl.dsp.focus({ direction = "down" }))
+hl.bind(vars.kbSwapWithMaster, hl.dsp.layout("swapwithmaster"))
 hl.bind("SUPER + SHIFT + left", hl.dsp.window.move({ direction = "left" }))
 hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({ direction = "right" }))
 hl.bind("SUPER + SHIFT + up", hl.dsp.window.move({ direction = "up" }))
@@ -167,7 +171,7 @@ hl.bind(
 )
 
 -- Sleep
-hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd(vars.sleepGestureCmd), { locked = true })
+hl.bind("SUPER + SHIFT + ALT + L", hl.dsp.exec_cmd(vars.sleepGestureCmd), { locked = true })
 
 -- Clipboard and emoji picker
 hl.bind("SUPER + V", hl.dsp.exec_cmd("pkill fuzzel || caelestia clipboard"))

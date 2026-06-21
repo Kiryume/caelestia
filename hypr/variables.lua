@@ -6,8 +6,8 @@ return {
     ------------------
 
     -- Apps
-    terminal                   = "foot",
-    browser                    = "firefox",
+    terminal                   = "kitty",
+    browser                    = "zen-browser",
     editor                     = "codium",
     fileExplorer               = "thunar",
     audioSettings              = "pavucontrol",
@@ -35,10 +35,10 @@ return {
     shadowColour               = "rgba(" .. scheme.inversePrimary .. "10)",
 
     -- Gaps
-    workspaceGaps              = 20,
-    windowGapsIn               = 5,
-    windowGapsOut              = 10,
-    singleWindowGapsOut        = 20,
+    workspaceGaps              = 5,
+    windowGapsIn               = 2.5,
+    windowGapsOut              = 2.5,
+    singleWindowGapsOut        = 5,
 
     -- Window styling
     windowOpacity              = 0.95,
@@ -62,8 +62,8 @@ return {
     kbMoveWinToWsGroup         = "CTRL + SUPER + ALT",
     kbGoToWs                   = "SUPER",
     kbGoToWsGroup              = "CTRL + SUPER",
-    kbNextWs                   = "CTRL + SUPER + Right",
-    kbPrevWs                   = "CTRL + SUPER + Left",
+    kbNextWs                   = "SUPER + O",
+    kbPrevWs                   = "SUPER + I",
 
     -- Window Group
     kbWindowGroupCycleNext     = "ALT + TAB",
@@ -73,6 +73,7 @@ return {
 
     -- Window Action
     kbMoveWindow               = "SUPER + Z",
+    kbSwapWithMaster           = "SUPER + space",
     kbResizeWindow             = "SUPER + X",
     kbWindowPip                = "SUPER + ALT + backslash",
     kbPinWindow                = "SUPER + P",
@@ -95,10 +96,10 @@ return {
     kbFileExplorer             = "SUPER + E",
 
     -- Misc
-    kbSession                  = "CTRL + ALT + Delete",
+    kbSession                  = "SUPER + P",
     kbShowSidebar              = "SUPER + N",
     kbClearNotifs              = "CTRL + ALT + C",
-    kbShowPanels               = "SUPER + K",
-    kbLock                     = "SUPER + L",
+    kbShowPanels               = "SUPER + A",
+    kbLock                     = "SUPER + SHIFT + P",
     kbRestoreLock              = "SUPER + ALT + L",
 }
