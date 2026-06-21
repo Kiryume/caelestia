@@ -115,8 +115,12 @@ create_bind(vars.kbUngroup, hl.dsp.window.move({ out_of_group = true }))
 create_bind(vars.kbGroupLockActive, hl.dsp.group.lock())
 
 -- Window actions
+create_bind("SUPER + H", hl.dsp.focus({ direction = "left" }))
+create_bind("SUPER + L", hl.dsp.focus({ direction = "right" }))
+create_bind("SUPER + K", hl.dsp.focus({ direction = "up" }))
+create_bind("SUPER + J", hl.dsp.focus({ direction = "down" }))
+create_bind(vars.kbSwapWithMaster, hl.dsp.layout("swapwithmaster"))
 for _, dir in ipairs({ "left", "right", "up", "down" }) do
-    create_bind("SUPER + " .. dir, hl.dsp.focus({ direction = dir }))
     create_bind("SUPER + SHIFT + " .. dir, hl.dsp.window.move({ direction = dir }))
 end
 

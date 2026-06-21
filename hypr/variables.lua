@@ -6,8 +6,8 @@ return {
     ------------------
 
     -- Apps
-    terminal                   = "foot",
-    browser                    = "firefox",
+    terminal                   = "kitty",
+    browser                    = "zen-browser",
     editor                     = "codium",
     fileExplorer               = "thunar",
     audioSettings              = "pwvucontrol",
@@ -35,10 +35,10 @@ return {
     shadowColour               = "rgba(" .. scheme.inversePrimary .. "10)",
 
     -- Gaps
-    workspaceGaps              = 20,
-    windowGapsIn               = 5,
-    windowGapsOut              = 10,
-    singleWindowGapsOut        = 20,
+    workspaceGaps              = 5,
+    windowGapsIn               = 2.5,
+    windowGapsOut              = 2.5,
+    singleWindowGapsOut        = 5,
 
     -- Window styling
     windowOpacity              = 0.95,
@@ -74,8 +74,8 @@ return {
     kbMoveWinFromWsSpecial     = "CTRL + SUPER + SHIFT + Down",
     kbMoveWinToWsNext          = { "SUPER + ALT + mouse_down", "SUPER + ALT + Page_Down", "CTRL + SUPER + SHIFT + Right" },
     kbMoveWinToWsPrev          = { "SUPER + ALT + mouse_up", "SUPER + ALT + Page_Up", "CTRL + SUPER + SHIFT + Left" },
-    kbNextWs                   = { "SUPER + mouse_down", "CTRL + SUPER + Right", "SUPER + Page_Down" },
-    kbPrevWs                   = { "SUPER + mouse_up", "CTRL + SUPER + Left", "SUPER + Page_Up" },
+    kbNextWs                   = { "SUPER + mouse_down", "SUPER + O", "SUPER + Page_Down" },
+    kbPrevWs                   = { "SUPER + mouse_up", "SUPER + I", "SUPER + Page_Up" },
     kbNextWsGroup              = "CTRL + SUPER + mouse_down",
     kbPrevWsGroup              = "CTRL + SUPER + mouse_up",
 
@@ -95,6 +95,7 @@ return {
     kbWindowIncreaseHeight     = { "SUPER + SHIFT + Equal", "SUPER + ALT + Down" },
 
     kbMoveWindow               = "SUPER + Z",
+    kbSwapWithMaster           = "SUPER + space",
     kbResizeWindow             = "SUPER + X",
     kbCenterWindow             = "CTRL + SUPER + Backslash",
     kbNormalizeWindow          = "CTRL + SUPER + ALT + Backslash",
@@ -129,21 +130,21 @@ return {
     kbColorPicker              = "SUPER + SHIFT + C",
 
     -- Media
-    kbMediaToggle              = "CTRL + SUPER + Space",
-    kbMediaNext                = "CTRL + SUPER + Equal",
-    kbMediaPrev                = "CTRL + SUPER + Minus",
+    kbMediaToggle              = { "CTRL + SUPER + Space", "SUPER + semicolon" },
+    kbMediaNext                = { "CTRL + SUPER + Equal", "SUPER + bracketleft" },
+    kbMediaPrev                = { "CTRL + SUPER + Minus", "SUPER + bracketright" },
     kbMediaStop                = "CTRL + SUPER + Backspace",
     kbVolumeMute               = "SUPER + SHIFT + M",
 
     -- Misc
     kbLauncher                 = "SUPER + SUPER_L",
-    kbSession                  = "CTRL + ALT + Delete",
+    kbSession                  = "SUPER + P",
     kbShowSidebar              = "SUPER + N",
     kbClearNotifs              = "CTRL + ALT + C",
-    kbShowPanels               = "SUPER + K",
-    kbLock                     = "SUPER + L",
+    kbShowPanels               = "SUPER + A",
+    kbLock                     = "SUPER + SHIFT + P",
     kbRestoreLock              = "SUPER + ALT + L",
-    kbSleep                    = "SUPER + SHIFT + L",
+    kbSleep                    = "SUPER + SHIFT + ALT + L",
 
     -- Clipboard and emoji picker
     kbClipboard                = "SUPER + V",
