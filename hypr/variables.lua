@@ -51,7 +51,7 @@ return {
     volumeStep                 = 10,
     cursorTheme                = "sweet-cursors",
     cursorSize                 = 24,
-    sleepGestureCmd            = "systemctl suspend-then-hibernate",
+    sleepGestureCmd            = "caelestia:lock",
 
     ------------------
     ---- KEYBINDS ----
