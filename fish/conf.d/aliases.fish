@@ -1,5 +1,5 @@
 if status is-interactive
-    alias gc="git clone" 
+    alias gc="git clone"
     alias gi="git init"
     alias ga="git add ."
     alias gs="git stage"
@@ -18,16 +18,16 @@ if status is-interactive
     alias rmdir='rmdirtrash'
 
     # Replace ls with exa
-    alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
-    alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
-    alias ll='exa -l --color=always --group-directories-first --icons'  # long format
-    alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
+    alias ls='exa -al --color=always --group-directories-first --icons always' # preferred listing
+    alias la='exa -a --color=always --group-directories-first --icons always'  # all files and dirs
+    alias ll='exa -l --color=always --group-directories-first --icons always'  # long format
+    alias lt='exa -aT --color=always --group-directories-first --icons always' # tree listing
     alias l.="exa -a | grep -E '^\.'"                                     # show only dotfiles
     alias ip="ip -color"
 
 
-    alias l='exa -al --color=always --group-directories-first --icons' 
-    alias sl='exa -al --color=always --group-directories-first --icons' 
+    alias l='exa -al --color=always --group-directories-first --icons always'
+    alias sl='exa -al --color=always --group-directories-first --icons always'
     alias botp='btop'
     alias btpo='btop'
 
