@@ -11,6 +11,7 @@ if status is-interactive
     alias gitsheet="bat --style header --style snip --style changes --style header ~/git/gitsheet.txt"
 
     alias c="code ."
+    alias z="zeditor ."
 
     alias mathup="curl https://raw.githubusercontent.com/leanprover-community/mathlib4/master/lean-toolchain -o lean-toolchain;lake update"
 
