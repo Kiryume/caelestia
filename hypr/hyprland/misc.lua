@@ -20,6 +20,11 @@ hl.config({
         background_color             = "rgb(" .. scheme.surfaceContainer .. ")",
     },
 
+    render = {
+        -- Don't auto-switch the monitor into HDR when a fullscreen app presents HDR content
+        cm_auto_hdr = 0,
+    },
+
     debug = {
         error_position = 1
     }
